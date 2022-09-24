@@ -16,21 +16,6 @@ Just the Docs gives your documentation a jumpstart with a responsive Jekyll them
 
 ---
 
-{: .new }
-> **Pre-release version `0.4.0.rc2` is available!**
-> See [the CHANGELOG]({{ site.baseurl }}{% link CHANGELOG.md %}) for a detailed breakdown.
-
-{: .warning }
-> Specifying `gem "just-the-docs"` in your `Gemfile` uses the latest ***release*** (`v0.3.3`), ignoring all pre-releases!
-> To use this pre-release, pin it:
-> ```ruby
-> gem "just-the-docs", "0.4.0.rc2"
-> ```
-> and/or
-> ```yaml
-> remote_theme: just-the-docs/just-the-docs@v0.4.0.rc2
-> ```
-
 ## Getting started
 
 ### Dependencies
@@ -81,10 +66,6 @@ remote_theme: just-the-docs/just-the-docs
 4. Point your web browser to [http://localhost:4000](http://localhost:4000)
 
 If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
-
-### Configure Just the Docs
-
-- [See configuration options]({{ site.baseurl }}{% link docs/configuration.md %})
 
 ---
 
