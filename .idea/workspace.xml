@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4bf8cbe6-35ce-4daf-8864-0d9c09d97ee5" name="Changes" comment="just-the-docs">
+      <change beforePath="$PROJECT_DIR$/_sass/custom/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/custom/custom.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FDYKYWdEvXiVOABfpEgV2KgolS" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/happy_bin/projects/Github/dev-jambin.github.io&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="dev-jambin.github.io" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="dev-jambin.github.io" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4bf8cbe6-35ce-4daf-8864-0d9c09d97ee5" name="Changes" comment="" />
+      <created>1664028058738</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664028058738</updated>
+    </task>
+    <task id="LOCAL-00001" summary="just-the-docs">
+      <created>1664028093414</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664028093414</updated>
+    </task>
+    <task id="LOCAL-00002" summary="just-the-docs">
+      <created>1664028642099</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664028642099</updated>
+    </task>
+    <task id="LOCAL-00003" summary="just-the-docs">
+      <created>1664028661723</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664028661723</updated>
+    </task>
+    <task id="LOCAL-00004" summary="just-the-docs">
+      <created>1664029115612</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664029115612</updated>
+    </task>
+    <task id="LOCAL-00005" summary="just-the-docs">
+      <created>1664029323359</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664029323359</updated>
+    </task>
+    <task id="LOCAL-00006" summary="just-the-docs">
+      <created>1664029752236</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664029752236</updated>
+    </task>
+    <task id="LOCAL-00007" summary="just-the-docs">
+      <created>1664029846243</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664029846243</updated>
+    </task>
+    <task id="LOCAL-00008" summary="just-the-docs">
+      <created>1664030876392</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664030876392</updated>
+    </task>
+    <task id="LOCAL-00009" summary="just-the-docs">
+      <created>1664032614972</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664032614972</updated>
+    </task>
+    <task id="LOCAL-00010" summary="just-the-docs">
+      <created>1664032675478</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664032675478</updated>
+    </task>
+    <task id="LOCAL-00011" summary="just-the-docs">
+      <created>1664032818673</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664032818673</updated>
+    </task>
+    <task id="LOCAL-00012" summary="just-the-docs">
+      <created>1664032974635</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664032974635</updated>
+    </task>
+    <task id="LOCAL-00013" summary="just-the-docs">
+      <created>1664033670910</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1664033670910</updated>
+    </task>
+    <task id="LOCAL-00014" summary="just-the-docs">
+      <created>1664033991975</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1664033991975</updated>
+    </task>
+    <task id="LOCAL-00015" summary="just-the-docs">
+      <created>1664034012243</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1664034012243</updated>
+    </task>
+    <task id="LOCAL-00016" summary="just-the-docs">
+      <created>1664034366444</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1664034366444</updated>
+    </task>
+    <task id="LOCAL-00017" summary="just-the-docs">
+      <created>1664034657791</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1664034657791</updated>
+    </task>
+    <task id="LOCAL-00018" summary="just-the-docs">
+      <created>1664034882676</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1664034882676</updated>
+    </task>
+    <task id="LOCAL-00019" summary="just-the-docs">
+      <created>1664035071625</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1664035071625</updated>
+    </task>
+    <task id="LOCAL-00020" summary="just-the-docs">
+      <created>1664035403453</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1664035403453</updated>
+    </task>
+    <task id="LOCAL-00021" summary="just-the-docs">
+      <created>1664035608497</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1664035608497</updated>
+    </task>
+    <task id="LOCAL-00022" summary="just-the-docs">
+      <created>1664035814988</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1664035814988</updated>
+    </task>
+    <task id="LOCAL-00023" summary="just-the-docs">
+      <created>1664036013202</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1664036013202</updated>
+    </task>
+    <task id="LOCAL-00024" summary="just-the-docs">
+      <created>1664036146917</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1664036146917</updated>
+    </task>
+    <task id="LOCAL-00025" summary="just-the-docs">
+      <created>1664036480901</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1664036480901</updated>
+    </task>
+    <task id="LOCAL-00026" summary="just-the-docs">
+      <created>1664036834535</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1664036834535</updated>
+    </task>
+    <task id="LOCAL-00027" summary="just-the-docs">
+      <created>1664037436580</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1664037436580</updated>
+    </task>
+    <task id="LOCAL-00028" summary="just-the-docs">
+      <created>1664037589135</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1664037589135</updated>
+    </task>
+    <task id="LOCAL-00029" summary="just-the-docs">
+      <created>1664037746821</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1664037746821</updated>
+    </task>
+    <task id="LOCAL-00030" summary="just-the-docs">
+      <created>1664037859924</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1664037859924</updated>
+    </task>
+    <task id="LOCAL-00031" summary="just-the-docs">
+      <created>1664038323474</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1664038323474</updated>
+    </task>
+    <task id="LOCAL-00032" summary="just-the-docs">
+      <created>1664038453888</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1664038453888</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="just-the-docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="just-the-docs" />
+  </component>
+</project>
