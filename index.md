@@ -16,21 +16,6 @@ Just the Docs gives your documentation a jumpstart with a responsive Jekyll them
 
 ---
 
-{: .new }
-> **Pre-release version `0.4.0.rc2` is available!**
-> See [the CHANGELOG]({{ site.baseurl }}{% link CHANGELOG.md %}) for a detailed breakdown.
-
-{: .warning }
-> Specifying `gem "just-the-docs"` in your `Gemfile` uses the latest ***release*** (`v0.3.3`), ignoring all pre-releases!
-> To use this pre-release, pin it:
-> ```ruby
-> gem "just-the-docs", "0.4.0.rc2"
-> ```
-> and/or
-> ```yaml
-> remote_theme: just-the-docs/just-the-docs@v0.4.0.rc2
-> ```
-
 ## Getting started
 
 ### Dependencies
