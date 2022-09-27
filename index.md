@@ -6,174 +6,142 @@ description: "Just the Docs is a responsive Jekyll theme with built-in search th
 permalink: /
 ---
 
-# **[03_[구현] 보드 게임](https://urclass.codestates.com/classroom/32)**
+# 의사코드(pseudocode) 작성법
 
-## **문제**
+> 의사코드는 프로그래밍 언어로 코드를 작성하기 전에 우리가 쓰는 일상 언어로 프로그램이 작동하는 논리를 먼저 작성하는 것을 말한다.
+> 
 
-N * N의 크기를 가진 보드판 위에서 게임을 하려고 합니다. 게임의 룰은 다음과 같습니다.
+## 의사코드를 쓰면 어떤 장점이 있을까?
 
-1. 좌표 왼쪽 상단(0, 0)에 말을 놓는다.
-2. 말은 상, 하, 좌, 우로 이동할 수 있고, 플레이어가 조작할 수 있다.
-3. 조작의 기회는 딱 한 번 주어진다.
-4. 조작할 때 U, D, L, R은 각각 상, 하, 좌, 우를 의미하며 한 줄에 띄어쓰기 없이 써야 한다.
-    - 예시: `UDDLLRRDRR`, `RRRRR`
-5. 한 번 움직일 때마다 한 칸씩 움직이게 되며, 그 칸 안의 요소인 숫자를 획득할 수 있다.
-6. 방문한 곳을 또 방문해도 숫자를 획득할 수 있다.
-7. 보드 밖을 나간 말은 OUT 처리가 된다.
-8. 칸 안의 숫자는 0 또는 1이다.
-    1. 단, 좌표 왼쪽 상단(0, 0)은 항상 0이다.
-9. 획득한 숫자를 합산하여 숫자가 제일 큰 사람이 이기게 된다.
+1. **시간이 단축된다.**
 
-보드판이 담긴 board와 조작하려고 하는 문자열 operation이 주어질 때, 말이 해당 칸을 지나가면서 획득한 숫자의 합을 구하는 함수를 작성하세요.
+문제가 복잡하고 코드 양이 길어질수록 구체적이고 세세한 로직이 기억나지 않을 것이다. 결국 작성하는 시간보다 헤매는 시간이 더 길어질 가능성이 크다. 그러나 수도코드를 남겨 놓으면 지표가 되어 헤매는 시간이 줄어든다. 
 
-## **입력**
+1. **디버깅에 용이하다.**
 
-### **인자 1: board**
+의사코드를 확인하면서 디버깅을 하면 원인 파악이 쉬워진다.
 
-- `int` 타입의 2차원 배열
-- 2 <= board.length <= 1,000
-- 예: `[ [0, 0, 1], [1, 0, 1], [1, 1, 1] ]`
+1. **프로그래밍 언어를 모르는 사람과 소통할 수 있다.**
 
-### **인자 2: operation**
+프로그래밍 언어에 익숙하지 않은 사람도 나의 수도 코드를 보며 로직을 이해하는 데 도움이 될 수 있다. 우리가 쓰는 일상 언어로 쓰여있기 때문에 현업에서 비개발자와도 소통하기 용이하다. 
 
-- `string` 타입의 대문자 영어가 쓰여진 문자열
-- 1 <= operation.length <= board.length * 2
-- U, L, D, R 이외의 문자열은 없습니다.
+## 의사코드는 구체적으로 써야한다.
 
-## **출력**
-
-- `int` 타입을 반환해야 합니다.
-    - board와 operation이 입력값의 예시 (`[ [0, 0, 1], [1, 0, 1], [1, 1, 1] ]`, `DDR`)일 때, (0, 0) -> (1, 0) -> (2, 0) -> (2, 1) 순서로 이동하게 되고, 각 0, 1, 1, 1을 얻어 `3`을 반환합니다.
-
-## **주의사항**
-
-- 만약, 말이 보드 밖으로 나갔다면 즉시 `null` 을 반환합니다.
-
-## **입출력 예시**
+컴퓨터는 0과 1밖에 모르는 바보다. 컴퓨터에게 땅콩잼 토스트 만들어달라고 하면 치킨을 만드는 로직을 기초적인 부분부터 구체적이고 상세하게 명령해야 한다. 
 
 ```java
-int[][] board1 = new int[]{
-  {0, 0, 0, 1},
-  {1, 1, 1, 0},
-  {1, 1, 0, 0},
-  {0, 0, 0, 0}
-}
-int output1 = boardGame(board1, "RRDLLD");
-System.out.println(output1); // 4
+// 마스크 착용을 컴퓨터에게 명령해야 한다면?
 
-int[][] board2 = new int[]{
-  {0, 0, 1},
-  {1, 1, 1},
-  {1, 0, 0}
-}
-int output2 = boardGame(board2, "UUUDD");
-System.out.println(output2); // null
-
-int[][] board3 = new int[][]{
-  {0, 0, 0, 0, 0},
-  {0, 0, 1, 0, 0},
-  {0, 0, 0, 0, 0},
-  {0, 0, 0, 1, 0},
-  {0, 0, 0, 0, 0}
-}
-int output3 = boardGame(board3, "DDRRRUDUDUD");
-System.out.println(output3); // 0
+1. 마스크를 꺼낸다.
+2. 마스크 날개를 펼치고 날개 끝을 잡아 오므린다.
+3. 고정심 부분을 위로 잡고 턱에서 시작하여 코와 입을 완전히 가린다.
+4. 만약 귀걸이 마스크라면 왼쪽 귀와 오른쪽 귀에 걸어준다.
+		만약 귀걸이 마스크가 아니라면 마스크를 머리 뒤쪽으로 걸어준다.
+5. 고정심을 코에 밀착되도록 누른다.
+6. 양 손으로 마스크 전체를 누르며 공기 누설이 있는지 체크한다.
+7. 만약 공기 누설이 있다면, 5번으로 돌아간다.
+8. 공기 누설이 없다면 마스크 착용 완료.
 ```
 
-## 풀이
+## 의사코드 작성 양식
+
+대표적으로 두 가지 방식이 있다.
+
+- 다른 사람도 이해할 수 있는 자연어(영어나 한국어처럼 일상에서 사용되는 언어)만 사용한다.
 
 ```java
-package com.codestates.coplit; 
-import java.util.*;
+// 배열의 각 요소들이 그 이전의 요소들의 합보다 큰지 여부를 확인하는 함수
+public Boolean superIncreasing(int[] arr) {
 
-public class Solution { 
-	public Integer boardGame(int[][] board, String operation) {
-    // TODO:
-		// 구현은 길고 긴 수많은 조건들을 만족해줘야 한다.
-		// 수도코드 필수
-		// [참고 룰]
-		// 방문한 곳을 또 방문해도 숫자를 획득할 수 있다.(중복 허용)
-		// 칸 안의 숫자는 0 또는 1이다. 단, 좌표 왼쪽 상단(0, 0)은 항상 0이다.
-		// 획득한 숫자를 합산하여 숫자가 제일 큰 사람이 이기게 된다. 
-		
-		// [게임 룰]
-		// 점수 
-		int score = 0;
-		// 좌표 왼쪽 상단(0,0)에 말을 놓는다.		
-		// 위아래를 움직일 ud, 좌우를 움직일 lr 
-		int ud = 0;
-		int lr = 0;
+// 변수 sum을 선언하고, 0번째 요소를 할당한다.
 
-		// 조작을 마무리할 때까지 반복
-		for(int i = 0; i < operation.length(); i++) {
-		// (조건1)말은 상, 하, 좌, 우로 이동할 수 있다.
-		// 한 번 움직일 때마다 한 칸씩 움직이게 되며, 그 칸 안의 요소인 숫자를 획득할 수 있다.
-		// U(n+1, n)D(n-1, n)L(n, n-1)R(n, n+1)은 각각 상하좌우를 의미한다. 한 줄에 띄어쓰기 없이 써야 한다. 
-			switch(operation.charAt(i)) {
-				case 'U': ud -= 1;
-									break;
-				case 'D': ud += 1;
-									break;
-				case 'L': lr -= 1;
-									break;
-				case 'R': lr += 1;
-									break;
-			}
-		// 보드 밖을 나간 말은 OUT 처리가 된다.
-		if(ud < 0 || ud >= board.length) return null;
-		if(lr < 0 || lr >= board.length) return null;
-		// 해당 위치의 숫자 score에 더함
-		score += board[ud][lr];
-		}
-		// 최종 score 리턴
-		return score;
-	} 
+// 1번째 요소부터, 가장 마지막 요소까지 순회하는 반복문을 만든다.
+
+	// 만약 arr[i]가 sum보다 작거나 같으면 false를 반환한다.
+
+	// 그렇지 않으면, 기존의 sum에 arr[i]를 더한다.
+
+//반복문이 끝나면 true를 반환한다.
+
 }
 ```
 
-## 레퍼런스
-
 ```java
-package com.codestates.coplit; 
-import java.util.*;
+// 배열의 각 요소들이 그 이전의 요소들의 합보다 큰지 여부를 확인하는 함수
+public Boolean superIncreasing(int[] arr) {
 
-public class Solution { 
-	public Integer boardGame(int[][] board, String operation) {
-		//HashMap을 선언한 후, 입력되는 명령어에 따라 이동할 좌표를 넣어줍니다.
-    HashMap<String, int[]> DIR = new HashMap<String, int[]>(){{
-      put("U", new int[]{-1, 0});
-      put("D", new int[]{1, 0});
-      put("L", new int[]{0, -1});
-      put("R", new int[]{0, 1});
-    }};
-		//보드의 길이를 선언합니다.
-    int LEN = board.length;
-		//시작 좌표와, 점수를 0으로 할당합니다.
-    int Y = 0;
-    int X = 0;
-    int score = 0;
+  // 변수 sum을 선언하고, 0번째 요소를 할당한다.
+  int sum = arr[0];
 
-		//입력받은 operation을 char배열로 변환합니다.
-    char[] chars = operation.toCharArray();
+  // 1번째 요소부터, 가장 마지막 요소까지 순회하는 반복문을 만든다.
+  for (int i = 1; i < arr.length; i++) {
 
-		//해당 배열만큼 반복합니다.
-    for(int i = 0; i < chars.length; i++) {
-      int dY = DIR.get(String.valueOf(chars[i]))[0];
-      int dX = DIR.get(String.valueOf(chars[i]))[1];
-      Y += dY;
-      X += dX;
-			//isValid 함수를 이용하여, 이동이 불가능한 경우 null을 반환합니다.
-      if (!isValid(Y, X, LEN)) return null;
-			//이동이 가능한 경우, 해당 보드의 값만큼 전체 점수에 더해줍니다.
-      score += board[Y][X];
+    // 만약 arr[i]가 sum보다 작거나 같으면
+    if (arr[i] <= sum) {
+      // false를 반환한다.
+      return false;
+    } else {
+      // 그렇지 않으면, 기존의 sum에 arr[i]를 더한다.
+      sum = sum + arr[i];
     }
-		//전체 점수를 반환합니다.
-    return score;
+    //반복문이 끝나면 true를 반환한다.
   }
-	//이동이 가능한지 확인하여 boolean으로 결과를 반환하는 함수
-  public boolean isValid(int y, int x, int LEN) {
-		//최소값과, 최대값을 벗어나면 false, 가능하다면 true를 반환합니다.
-    return 0 <= y && y < LEN && 0 <= x && x < LEN;
-  }
+  return true;
 }
 ```
+
+- 자연어와 프로그램 언어의 조합을 사용한다.
+
+```java
+// 문자열을 입력받아 연속된 한자리 홀수 숫자 사이에 '-'를 추가한 문자열을 리턴하는 함수
+
+public String insertDash(String str) {
+	//입력된 String을 char을 요소로 가지는 배열로 변환합니다.
+
+	//for(1번째 요소부터, 가장 마지막 요소까지 순회)
+
+		//if(str[i-1], str[i] 둘다 홀수라면)
+
+			//result에 str[i]와 '-' 를 추가한다.
+
+		// else() result에 str[i]만 추가한다.
+
+		//예외 케이스로 문자열의 마지막을 추가한다.
+
+	//반복문이 끝나면 result를 반환한다.
+
+}
+```
+
+```java
+// 문자열을 입력받아 연속된 한자리 홀수 숫자 사이에 '-'를 추가한 문자열을 리턴하는 함수
+
+public String insertDash(String str) {
+	//입력된 String을 char을 요소로 가지는 배열로 변환합니다.
+  char[] arrCh = str.toCharArray();
+	//결과를 저장할 result 변수를 선언, 빈 값을 할당합니다.
+  String result = "";
+
+  for(int i = 1; i < arrCh.length; i++) {
+		//앞선 문자열과 이후 문자열을 비교할 변수를 선언후, 해당 값을 int로 변환합니다.
+    int preChar = Character.getNumericValue(arrCh[i - 1]);
+    int curChar = Character.getNumericValue(arrCh[i]);
+		//두 문자열이 모두 홀수라면
+    if(preChar % 2 == 1 && curChar % 2 == 1) {
+			//결과에 이전값과 "-"를 함께 저장합니다.
+      result = result + preChar + "-";
+    } else {
+			//하나라도 홀수가 아니라면, 결과에 이전값만 추가로 저장합니다.
+      result = result + preChar;
+    }
+		//인덱스가 마지막일 경우, 맨 마지막 char을 추가합니다(예외 케이스)
+    if(i == arrCh.length - 1) result = result + curChar;
+  }
+  return result;
+}
+```
+
+<aside>
+💡 중요한 것은 자신만의 원칙을 만들어, 일관성 있고 다른 사람도 이해할 수 있는 수도코드를 작성하는 것이다.
+
+</aside>
