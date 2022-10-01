@@ -1,7 +1,6 @@
 ---
 title: Granchild of Test
-parent: Child of Test
-grand_parent: Test
+parent: Java
 nav_order: 1
 ---
 

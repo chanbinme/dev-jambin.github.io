@@ -1,5 +1,5 @@
-title: "GreenBin Blog"
-remote_theme: just-the-docs/just-the-docs
+title: "GreenBin"
+theme: "just-the-docs"
 color_scheme: "light"
 
 # Enable or disable the site search
