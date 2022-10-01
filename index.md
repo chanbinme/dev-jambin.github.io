@@ -6,142 +6,113 @@ description: "Just the Docs is a responsive Jekyll theme with built-in search th
 permalink: /
 ---
 
-# 의사코드(pseudocode) 작성법
+# Focus on writing good documentation.
+{: .fs-9 }
 
-> 의사코드는 프로그래밍 언어로 코드를 작성하기 전에 우리가 쓰는 일상 언어로 프로그램이 작동하는 논리를 먼저 작성하는 것을 말한다.
-> 
+Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
+{: .fs-6 .fw-300 }
 
-## 의사코드를 쓰면 어떤 장점이 있을까?
+[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/just-the-docs/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
 
-1. **시간이 단축된다.**
+---
 
-문제가 복잡하고 코드 양이 길어질수록 구체적이고 세세한 로직이 기억나지 않을 것이다. 결국 작성하는 시간보다 헤매는 시간이 더 길어질 가능성이 크다. 그러나 수도코드를 남겨 놓으면 지표가 되어 헤매는 시간이 줄어든다. 
+{: .new }
+> **Pre-release version `0.4.0.rc2` is available!**
+> See [the CHANGELOG]({{ site.baseurl }}{% link CHANGELOG.md %}) for a detailed breakdown.
 
-1. **디버깅에 용이하다.**
+{: .warning }
+> Specifying `gem "just-the-docs"` in your `Gemfile` uses the latest ***release*** (`v0.3.3`), ignoring all pre-releases!
+> To use this pre-release, pin it:
+> ```ruby
+> gem "just-the-docs", "0.4.0.rc2"
+> ```
+> and/or
+> ```yaml
+> remote_theme: just-the-docs/just-the-docs@v0.4.0.rc2
+> ```
 
-의사코드를 확인하면서 디버깅을 하면 원인 파악이 쉬워진다.
+## Getting started
 
-1. **프로그래밍 언어를 모르는 사람과 소통할 수 있다.**
+### Dependencies
 
-프로그래밍 언어에 익숙하지 않은 사람도 나의 수도 코드를 보며 로직을 이해하는 데 도움이 될 수 있다. 우리가 쓰는 일상 언어로 쓰여있기 때문에 현업에서 비개발자와도 소통하기 용이하다. 
+Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [Jekyll quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special plugins and can run on GitHub Pages' standard Jekyll compiler. The [Jekyll SEO Tag plugin](https://github.com/jekyll/jekyll-seo-tag) is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the [Jekyll SEO Tag usage guide](https://jekyll.github.io/jekyll-seo-tag/usage/).
 
-## 의사코드는 구체적으로 써야한다.
+### Quick start: Use as a GitHub Pages remote theme
 
-컴퓨터는 0과 1밖에 모르는 바보다. 컴퓨터에게 땅콩잼 토스트 만들어달라고 하면 치킨을 만드는 로직을 기초적인 부분부터 구체적이고 상세하게 명령해야 한다. 
+1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
 
-```java
-// 마스크 착용을 컴퓨터에게 명령해야 한다면?
-
-1. 마스크를 꺼낸다.
-2. 마스크 날개를 펼치고 날개 끝을 잡아 오므린다.
-3. 고정심 부분을 위로 잡고 턱에서 시작하여 코와 입을 완전히 가린다.
-4. 만약 귀걸이 마스크라면 왼쪽 귀와 오른쪽 귀에 걸어준다.
-		만약 귀걸이 마스크가 아니라면 마스크를 머리 뒤쪽으로 걸어준다.
-5. 고정심을 코에 밀착되도록 누른다.
-6. 양 손으로 마스크 전체를 누르며 공기 누설이 있는지 체크한다.
-7. 만약 공기 누설이 있다면, 5번으로 돌아간다.
-8. 공기 누설이 없다면 마스크 착용 완료.
+```yaml
+remote_theme: just-the-docs/just-the-docs
 ```
 
-## 의사코드 작성 양식
+<small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/pmarsceill/jtd-remote)</small>
 
-대표적으로 두 가지 방식이 있다.
+### Local installation: Use the gem-based theme
 
-- 다른 사람도 이해할 수 있는 자연어(영어나 한국어처럼 일상에서 사용되는 언어)만 사용한다.
+1. Install the Ruby Gem
+  ```bash
+  $ gem install just-the-docs
+  ```
+  ```yaml
+  # .. or add it to your Jekyll site’s Gemfile
+  gem "just-the-docs"
+  ```
 
-```java
-// 배열의 각 요소들이 그 이전의 요소들의 합보다 큰지 여부를 확인하는 함수
-public Boolean superIncreasing(int[] arr) {
+2. Add Just the Docs to your Jekyll site’s `_config.yml`
+  ```yaml
+  theme: "just-the-docs"
+  ```
 
-// 변수 sum을 선언하고, 0번째 요소를 할당한다.
+3. _Optional:_ Initialize search data (creates `search-data.json`)
+  ```bash
+  $ bundle exec just-the-docs rake search:init
+  ```
 
-// 1번째 요소부터, 가장 마지막 요소까지 순회하는 반복문을 만든다.
+3. Run your local Jekyll server
+  ```bash
+  $ jekyll serve
+  ```
+  ```bash
+  # .. or if you're using a Gemfile (bundler)
+  $ bundle exec jekyll serve
+  ```
 
-	// 만약 arr[i]가 sum보다 작거나 같으면 false를 반환한다.
 
-	// 그렇지 않으면, 기존의 sum에 arr[i]를 더한다.
+4. Point your web browser to [http://localhost:4000](http://localhost:4000)
 
-//반복문이 끝나면 true를 반환한다.
+If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
 
-}
-```
+### Configure Just the Docs
 
-```java
-// 배열의 각 요소들이 그 이전의 요소들의 합보다 큰지 여부를 확인하는 함수
-public Boolean superIncreasing(int[] arr) {
+- [See configuration options]({{ site.baseurl }}{% link docs/configuration.md %})
 
-  // 변수 sum을 선언하고, 0번째 요소를 할당한다.
-  int sum = arr[0];
+---
 
-  // 1번째 요소부터, 가장 마지막 요소까지 순회하는 반복문을 만든다.
-  for (int i = 1; i < arr.length; i++) {
+## About the project
 
-    // 만약 arr[i]가 sum보다 작거나 같으면
-    if (arr[i] <= sum) {
-      // false를 반환한다.
-      return false;
-    } else {
-      // 그렇지 않으면, 기존의 sum에 arr[i]를 더한다.
-      sum = sum + arr[i];
-    }
-    //반복문이 끝나면 true를 반환한다.
-  }
-  return true;
-}
-```
+Just the Docs is &copy; 2017-{{ "now" | date: "%Y" }} by [Patrick Marsceill](http://patrickmarsceill.com).
 
-- 자연어와 프로그램 언어의 조합을 사용한다.
+### License
 
-```java
-// 문자열을 입력받아 연속된 한자리 홀수 숫자 사이에 '-'를 추가한 문자열을 리턴하는 함수
+Just the Docs is distributed by an [MIT license](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt).
 
-public String insertDash(String str) {
-	//입력된 String을 char을 요소로 가지는 배열로 변환합니다.
+### Contributing
 
-	//for(1번째 요소부터, 가장 마지막 요소까지 순회)
+When contributing to this repository, please first discuss the change you wish to make via issue,
+email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/just-the-docs/just-the-docs#contributing).
 
-		//if(str[i-1], str[i] 둘다 홀수라면)
+#### Thank you to the contributors of Just the Docs!
 
-			//result에 str[i]와 '-' 를 추가한다.
+<ul class="list-style-none">
+{% for contributor in site.github.contributors %}
+  <li class="d-inline-block mr-1">
+     <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="32" height="32" alt="{{ contributor.login }}"/></a>
+  </li>
+{% endfor %}
+</ul>
 
-		// else() result에 str[i]만 추가한다.
+### Code of Conduct
 
-		//예외 케이스로 문자열의 마지막을 추가한다.
+Just the Docs is committed to fostering a welcoming community.
 
-	//반복문이 끝나면 result를 반환한다.
-
-}
-```
-
-```java
-// 문자열을 입력받아 연속된 한자리 홀수 숫자 사이에 '-'를 추가한 문자열을 리턴하는 함수
-
-public String insertDash(String str) {
-	//입력된 String을 char을 요소로 가지는 배열로 변환합니다.
-  char[] arrCh = str.toCharArray();
-	//결과를 저장할 result 변수를 선언, 빈 값을 할당합니다.
-  String result = "";
-
-  for(int i = 1; i < arrCh.length; i++) {
-		//앞선 문자열과 이후 문자열을 비교할 변수를 선언후, 해당 값을 int로 변환합니다.
-    int preChar = Character.getNumericValue(arrCh[i - 1]);
-    int curChar = Character.getNumericValue(arrCh[i]);
-		//두 문자열이 모두 홀수라면
-    if(preChar % 2 == 1 && curChar % 2 == 1) {
-			//결과에 이전값과 "-"를 함께 저장합니다.
-      result = result + preChar + "-";
-    } else {
-			//하나라도 홀수가 아니라면, 결과에 이전값만 추가로 저장합니다.
-      result = result + preChar;
-    }
-		//인덱스가 마지막일 경우, 맨 마지막 char을 추가합니다(예외 케이스)
-    if(i == arrCh.length - 1) result = result + curChar;
-  }
-  return result;
-}
-```
-
-<aside>
-💡 중요한 것은 자신만의 원칙을 만들어, 일관성 있고 다른 사람도 이해할 수 있는 수도코드를 작성하는 것이다.
-
-</aside>
+[View our Code of Conduct](https://github.com/just-the-docs/just-the-docs/tree/main/CODE_OF_CONDUCT.md) on our GitHub repository.
