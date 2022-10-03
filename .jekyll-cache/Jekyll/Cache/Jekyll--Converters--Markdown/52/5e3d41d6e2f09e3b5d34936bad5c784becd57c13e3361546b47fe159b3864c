@@ -1,4 +1,4 @@
-I"\<h1 class="fs-9" id="focus-on-writing-good-documentation">Focus on writing good documentation.</h1>
+I"x<h1 class="fs-9" id="focus-on-writing-good-documentation">Focus on writing good documentation.</h1>
 
 <p class="fs-6 fw-300">Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.</p>
 
@@ -8,7 +8,7 @@
 
 <blockquote class="new">
   <p><strong>Pre-release version <code class="language-plaintext highlighter-rouge">0.4.0.rc2</code> is available!</strong>
-See <a href="/just-the-docs/just-the-docs/CHANGELOG/">the CHANGELOG</a> for a detailed breakdown.</p>
+See <a href="/dev-jambin.github.io/dev-jambin.github.io/CHANGELOG/">the CHANGELOG</a> for a detailed breakdown.</p>
 </blockquote>
 
 <blockquote class="warning">
@@ -71,7 +71,7 @@ To use this pre-release, pin it:</p>
 <h3 id="configure-just-the-docs">Configure Just the Docs</h3>
 
 <ul>
-  <li><a href="/just-the-docs/just-the-docs/docs/configuration/">See configuration options</a></li>
+  <li><a href="/dev-jambin.github.io/dev-jambin.github.io/docs/configuration/">See configuration options</a></li>
 </ul>
 
 <hr />

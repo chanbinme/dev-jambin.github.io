@@ -1,4 +1,4 @@
-I"m<h1 id="callouts">Callouts</h1>
+I"{<h1 id="callouts">Callouts</h1>
 
 <p>Markdown does not include support for callouts. However, you can style text as a callout using a Markdown extension supported by kramdown: <a href="https://kramdown.gettalong.org/quickref.html#block-attributes"><em>block IALs</em></a>.</p>
 
@@ -6,7 +6,7 @@
 
 <p class="warning">These callout names are <em>not</em> pre-defined by the theme: you need to define your own names.</p>
 
-<p>When you have <a href="/just-the-docs/just-the-docs/docs/configuration/#callouts">configured</a> the  <code class="language-plaintext highlighter-rouge">color</code> and (optional) <code class="language-plaintext highlighter-rouge">title</code> for a callout, you can apply it to a paragraph, or to a block quote with several paragraphs, as illustrated below.<sup id="fnref:postfix" role="doc-noteref"><a href="#fn:postfix" class="footnote" rel="footnote">1</a></sup></p>
+<p>When you have <a href="/dev-jambin.github.io/dev-jambin.github.io/docs/configuration/#callouts">configured</a> the  <code class="language-plaintext highlighter-rouge">color</code> and (optional) <code class="language-plaintext highlighter-rouge">title</code> for a callout, you can apply it to a paragraph, or to a block quote with several paragraphs, as illustrated below.<sup id="fnref:postfix" role="doc-noteref"><a href="#fn:postfix" class="footnote" rel="footnote">1</a></sup></p>
 
 <h4 class="no_toc" id="an-untitled-callout">An untitled callout</h4>
 

@@ -1,4 +1,4 @@
-I"|V<h1 class="no_toc" id="configuration">Configuration</h1>
+I"´V<h1 class="no_toc" id="configuration">Configuration</h1>
 
 <p class="fs-6 fw-300">Just the Docs has some specific configuration parameters that can be defined in your Jekyll siteâ€™s _config.yml file.</p>
 
@@ -69,7 +69,7 @@
   <span class="na">version</span><span class="pi">:</span> <span class="s2">"</span><span class="s">9.1.3"</span>
 </code></pre></div></div>
 
-<p>See <a href="/just-the-docs/just-the-docs/docs/ui-components/code/#mermaid-diagram-code-blocks">the Code documentation</a> for more configuration options and information.</p>
+<p>See <a href="/dev-jambin.github.io/dev-jambin.github.io/docs/ui-components/code/#mermaid-diagram-code-blocks">the Code documentation</a> for more configuration options and information.</p>
 
 <h2 id="aux-links">Aux links</h2>
 
@@ -94,7 +94,7 @@
 <h2 id="external-navigation-links">External navigation links</h2>
 
 <p>External links can be added to the navigation through the <code class="language-plaintext highlighter-rouge">nav_external_links</code> option.
-See <a href="/just-the-docs/just-the-docs/docs/navigation-structure/#external-navigation-links">Navigation Structure</a> for more details.</p>
+See <a href="/dev-jambin.github.io/dev-jambin.github.io/docs/navigation-structure/#external-navigation-links">Navigation Structure</a> for more details.</p>
 
 <h2 id="footer-content">Footer content</h2>
 
@@ -150,7 +150,7 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
 });
 </script>
 
-<p>See <a href="/just-the-docs/just-the-docs/docs/customization/">Customization</a> for more information.</p>
+<p>See <a href="/dev-jambin.github.io/dev-jambin.github.io/docs/customization/">Customization</a> for more information.</p>
 
 <h2 id="callouts">Callouts</h2>
 
@@ -195,7 +195,7 @@ The value of <code class="language-plaintext highlighter-rouge">callouts_level</
 The default level is <code class="language-plaintext highlighter-rouge">quiet</code> when using the <code class="language-plaintext highlighter-rouge">light</code> or custom color schemes,
 and <code class="language-plaintext highlighter-rouge">loud</code> when using the <code class="language-plaintext highlighter-rouge">dark color scheme.</code></p>
 
-<p>See <a href="/just-the-docs/just-the-docs/docs/ui-components/callouts/">Callouts</a> for more information.</p>
+<p>See <a href="/dev-jambin.github.io/dev-jambin.github.io/docs/ui-components/callouts/">Callouts</a> for more information.</p>
 
 <h2 id="google-analytics">Google Analytics</h2>
 

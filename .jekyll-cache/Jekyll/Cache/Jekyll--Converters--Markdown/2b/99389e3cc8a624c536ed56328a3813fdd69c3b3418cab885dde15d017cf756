@@ -1,4 +1,4 @@
-I"ZG<h1 class="no_toc" id="navigation-structure">Navigation Structure</h1>
+I"vG<h1 class="no_toc" id="navigation-structure">Navigation Structure</h1>
 
 <details open="">
   <summary class="text-delta">
@@ -232,7 +232,7 @@
 
 <h2 id="auxiliary-links">Auxiliary Links</h2>
 
-<p>To add auxiliary links to your site (in the upper right on all pages), add it to the <code class="language-plaintext highlighter-rouge">aux_links</code> <a href="/just-the-docs/just-the-docs/docs/configuration/#aux-links">configuration option</a> in your site’s <code class="language-plaintext highlighter-rouge">_config.yml</code> file.</p>
+<p>To add auxiliary links to your site (in the upper right on all pages), add it to the <code class="language-plaintext highlighter-rouge">aux_links</code> <a href="/dev-jambin.github.io/dev-jambin.github.io/docs/configuration/#aux-links">configuration option</a> in your site’s <code class="language-plaintext highlighter-rouge">_config.yml</code> file.</p>
 
 <h4 class="no_toc" id="example-7">Example</h4>
 
@@ -246,7 +246,7 @@
 
 <h2 id="external-navigation-links">External Navigation Links</h2>
 
-<p>To add external links to the navigation, add them to the <code class="language-plaintext highlighter-rouge">nav_external_links</code> <a href="/just-the-docs/just-the-docs/docs/configuration/">configuration</a> option in your site’s <code class="language-plaintext highlighter-rouge">_config.yml</code> file.
+<p>To add external links to the navigation, add them to the <code class="language-plaintext highlighter-rouge">nav_external_links</code> <a href="/dev-jambin.github.io/dev-jambin.github.io/docs/configuration/">configuration</a> option in your site’s <code class="language-plaintext highlighter-rouge">_config.yml</code> file.
 External links will appear under all other items in the listing order.</p>
 
 <h4 id="example-8">Example</h4>

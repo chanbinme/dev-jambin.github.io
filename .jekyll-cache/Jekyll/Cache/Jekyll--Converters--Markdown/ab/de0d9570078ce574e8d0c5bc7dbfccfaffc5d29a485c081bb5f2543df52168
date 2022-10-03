@@ -1,4 +1,4 @@
-I"N8<h1 class="no_toc" id="customization">Customization</h1>
+I"q8<h1 class="no_toc" id="customization">Customization</h1>
 
 <h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
 
@@ -145,7 +145,7 @@ This will allow for all overrides to be kept in a single file, and for any upstr
 
 <p><code class="language-plaintext highlighter-rouge">_includes/toc_heading_custom.html</code></p>
 
-<p>If the page has any child pages, and <code class="language-plaintext highlighter-rouge">has_toc</code> is not set to <code class="language-plaintext highlighter-rouge">false</code>, this content appears as a heading above the <a href="/just-the-docs/just-the-docs/docs/navigation-structure/#auto-generating-table-of-contents">auto-generating list of child pages</a> after the page’s content.</p>
+<p>If the page has any child pages, and <code class="language-plaintext highlighter-rouge">has_toc</code> is not set to <code class="language-plaintext highlighter-rouge">false</code>, this content appears as a heading above the <a href="/dev-jambin.github.io/dev-jambin.github.io/docs/navigation-structure/#auto-generating-table-of-contents">auto-generating list of child pages</a> after the page’s content.</p>
 
 <h4 class="no_toc" id="example-3">Example</h4>
 
@@ -159,7 +159,7 @@ This will allow for all overrides to be kept in a single file, and for any upstr
 
 <p><code class="language-plaintext highlighter-rouge">_includes/footer_custom.html</code></p>
 
-<p>This content appears at the bottom of every page’s main content. More info for this include can be found in the <a href="/just-the-docs/just-the-docs/docs/configuration/#footer-content">Configuration - Footer content</a>.</p>
+<p>This content appears at the bottom of every page’s main content. More info for this include can be found in the <a href="/dev-jambin.github.io/dev-jambin.github.io/docs/configuration/#footer-content">Configuration - Footer content</a>.</p>
 
 <h3 id="custom-head">Custom Head</h3>
 
@@ -170,7 +170,7 @@ This will allow for all overrides to be kept in a single file, and for any upstr
 <h4 class="no_toc" id="example-4">Example</h4>
 
 <p>To add a custom favicon, create <code class="language-plaintext highlighter-rouge">_includes/head_custom.html</code> and add:</p>
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"shortcut icon"</span> <span class="na">type=</span><span class="s">"image/png"</span> <span class="na">href=</span><span class="s">"/just-the-docs/path/to/your/favicon.png"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"shortcut icon"</span> <span class="na">type=</span><span class="s">"image/png"</span> <span class="na">href=</span><span class="s">"/dev-jambin.github.io/path/to/your/favicon.png"</span><span class="nt">&gt;</span>
 </code></pre></div></div>
 
 <h3 id="custom-header">Custom Header</h3>
