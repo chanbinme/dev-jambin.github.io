@@ -1,4 +1,6 @@
-source "https://rubygems.org"
-gemspec
+source 'https://rubygems.org'
 
-gem "webrick", "~> 1.7"
+gem "jekyll", "~> 4.2" # installed by `gem jekyll`
+gem "webrick"          # required when using Ruby >= 3
+
+gem "just-the-docs", "0.4.0.rc2"
