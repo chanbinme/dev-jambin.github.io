@@ -1,5 +1,5 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: GreenBin
+description: 말은 쉽지. 코드를 보여줘!
 theme: "just-the-docs"
 
 url: 'https://dev-jmabin.github.io'
@@ -7,3 +7,6 @@ url: 'https://dev-jmabin.github.io'
 aux_links:
   "dev-jambin GitHub": "https://dev-jambin.github.io"
 
+callouts :
+  highlight:
+    color: green
