@@ -4,7 +4,7 @@ title: ArrayIndexOutOfBoundsException 원인과 해결법
 parent: 나의 에러 일지
 nav_order: 2
 ---
-# ArrayIndexOutOfBoundsException 원인과 해결법
+# **ArrayIndexOutOfBoundsException 원인과 해결법**
 ## 원인
 
 {: .highlight }

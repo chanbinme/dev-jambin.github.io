@@ -4,10 +4,10 @@ title: Java - String 메소드 총정리
 parent: Java
 nav_order: 3
 ---
-
+# **Java - String 메소드 총정리!**
 계속 추가중입니다.
 
-### `split()`
+## split()
 
 {: .highlight }
 지정된 분리자(regex)를 기준으로 문자열을 자르고 문자열 배열에 담아 반환해주는 메서드
@@ -35,7 +35,7 @@ result3 = [010, 1234, 5678-9101]
 
 ---
 
-### `toCharArray()`
+## toCharArray()
 
 {: .highlight }
 문자열을 잘라서 배열로 반환하는 메서드. split()과 다른 점은 문자열 배열이 아닌 문자형(char[]) 배열에 담는다는 것이다.
@@ -64,7 +64,7 @@ String str2 = new String(ch);
 
 ---
 
-### `equals()`
+## equals()
 
 {: .highlight }
 매개변수로 받은 문자열(obj)과 String 인스턴스의 문자열을 비교한다. obj가 문자열이 아니거나 내용이 다르면 false를 반환한다.
@@ -99,7 +99,7 @@ System.out.println(c1.equals(c2));   //true
 
 ---
 
-### `replace()`
+## replace()
 
 {: .highlight }
 바꾸고 싶은 문자를 입력 받아 문자열을 치환시켜주는 메서드
@@ -112,7 +112,7 @@ String replaceFirs(String regex, String replacement)
 
 ### 예제
 
-### `String replace(기존 문자, 바꿀 문자)`
+### String replace(기존 문자, 바꿀 문자)
 
 replace 메서드는 문자열에서 변경하고 싶은 문자열을 찾아 변환한다.
 
@@ -127,7 +127,7 @@ a1a.1234.5678.91a1
 010a1234a5678a9101
 ```
 
-### `String replaceAll(기존 문자 또는 정규식, 바꿀 문자)`
+### String replaceAll(기존 문자 또는 정규식, 바꿀 문자)
 
 replace와 replaceAll의 차이점은 replace는 인자를 문자열로 입력받지만 replaceAll은 인자를 문자열 또는 정규식으로 입력 받는다.그래서 특수문자를 입력 받은 경우 replace에서는 치환이 가능한 반면 replaceAll은 특수문자를 정규식으로 입력받아 치환이 어렵다.
 
@@ -164,7 +164,7 @@ System.out.println(str);
 010123456789101
 ```
 
-### `String replaceFirst(기존 문자 또는 정규식, 바꿀 문자)`
+### String replaceFirst(기존 문자 또는 정규식, 바꿀 문자)
 
 replaceFirst는 문자열에서 처음으로 찾은 문자만 치환한다.
 
@@ -186,7 +186,7 @@ System.out.println(str3);
 
 ---
 
-### `charAt()`
+## charAt()
 
 {: .highlight }
 문자열의 특정 인덱스에 해당하는 문자를 char타입으로 반환해주는 메서드
@@ -208,7 +208,7 @@ B
 
 ---
 
-### `compareTo()`
+## compareTo()
 
 {: .highlight }
 두개의 문자열을 비교하여 int 값으로 반환해주는 메서드.
@@ -265,7 +265,7 @@ System.out.println(str.compareToIgnoreCase("Abcd"));
 
 ---
 
-### `concat()`
+## concat()
 
 {: .highlight }
 문자열 뒤에 인자로 받은 문자열을 추가한 새로운 문자열을 반환하는 메서드. concat은 concatenate(연결시키다)의 약자이다.
@@ -286,7 +286,7 @@ BHC뿌링클
 
 ---
 
-### `indexOf()`
+## indexOf()
 
 {: .highlight }
 문자열에서 인자로 받은 문자나 문자열이 처음으로 등장하는 위치의 인덱스를 반환하는 메서드. 문자열에 전달 받은 문자나 문자열이 포함되어 있지 않으면 -1을 반환한다.
@@ -311,7 +311,7 @@ System.out.println(str.indexOf("존맛"));
 
 ---
 
-### `toLowerCase()` `와` `toUpperCase()`
+## toLowerCase(), toUpperCase()
 
 {: .highlight }
 toLowerCase( )는 해당 문자열의 모든 문자를 소문자로 변환 해주는 메서드이다.toUpperCase( )는 해당 문자열의 모든 문자를 대문자로 변환해주는 메서드이다.
@@ -338,7 +338,7 @@ BHC
 
 ---
 
-### `trim()`
+## trim()
 
 {: .highlight }
 해당 문자열의 맨 앞과 맨 뒤에 포함된 모든 공백 문자를 제거해주는 메서드. 중간에 있는 공백은 제거하지 않는다.
@@ -365,7 +365,7 @@ B H C
 
 ---
 
-### `getBytes()`
+## getBytes()
 
 {: .highlight }
 문자열을 byte 배열로 반환하는 메서드
@@ -388,7 +388,7 @@ System.out.println(Arrays.toString(bArr));
 
 ---
 
-### `String.format()`
+## String.format()
 
 {: .highlight }
 문자열을 정의된 format대로 치환하여 반환하는 메서드
