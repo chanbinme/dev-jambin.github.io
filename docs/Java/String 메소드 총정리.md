@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Java - String 메소드 총정리
+title: String 메소드 총정리
 parent: Java
 nav_order: 3
 ---

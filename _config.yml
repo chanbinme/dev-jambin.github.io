@@ -1,11 +1,11 @@
-title: GreenBin
-description: 말은 쉽지. 코드를 보여줘!
+title: ColdBean
+description: 궁금한건 못참아
 theme: "just-the-docs"
 
 url: 'https://dev-jmabin.github.io'
 
 aux_links:
-  "dev-jambin GitHub": "https://dev-jambin.github.io"
+  "dev-jambin GitHub": "https://github.com/dev-jambin"
 
 callouts :
   highlight:
